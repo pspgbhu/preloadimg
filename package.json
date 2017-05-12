@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/pspgbhu/proloadimg/issues"
   },
-  "homepage": "https://github.com/pspgbhu/proloadimg#readme"
+  "homepage": "https://github.com/pspgbhu/proloadimg#readme",
+  "devDependencies": {
+    "rollup": "^0.41.6"
+  }
 }
