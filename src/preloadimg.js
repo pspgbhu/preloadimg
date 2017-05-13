@@ -1,3 +1,9 @@
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.preloadimg = factory());
+}(this, (function () { 'use strict';
+
 /**!
  *  A library for preload images.
  *  @author pspgbhu <brotherchun001@gmail.com>
@@ -31,7 +37,7 @@ function preloadimg(srcAry, success, fail) {
         timeStamp: e.timeStamp,
         process: precent,
         result: 'success',
-      }
+      };
 
       if (typeof success === 'function') {
         success(argus);
@@ -49,7 +55,7 @@ function preloadimg(srcAry, success, fail) {
         timeStamp: e.timeStamp,
         process: precent,
         result: 'failed'
-      }
+      };
 
       if (typeof fail === 'function') {
         fail(argus);
@@ -67,6 +73,10 @@ function preloadimg(srcAry, success, fail) {
       // if (precent === 1 && typeof success === 'function') {
       //   success(argus);
       // }
-    }
+    };
   }
 }
+
+return preloadimg;
+
+})));
