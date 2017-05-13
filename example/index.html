@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>preloadimg</title>
+</head>
+<body>
+
+  <script src="../src/preloadimg.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var imgs = [
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv8s5M31tFNvbjtGgxqmx14eh2h2651gkbrx-kN0cNYPD0qvRi',
+      'https://encrypted-tbn0',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3cBMqdXQn-vqxXPYsaflXEj76EhjGhwk1X_QjGdE0fLQOr4JVg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYD9_xhLRKWBFwYhz4nGtihbH3haM5fwpHKWbpoJ6XXXx9K-2ChQ',
+    ];
+    
+    preloadimg(imgs, success => {
+      console.log(success);
+    }, fail => {
+      console.log(fail)
+    });
+  </script>
+</body>
+</html>
