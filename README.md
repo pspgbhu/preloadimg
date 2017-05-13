@@ -4,7 +4,7 @@ A library for preload images
 
 ---
 
-## install
+## Install
 `npm install --save preloadimg`
 
 ## Usage
