@@ -1,5 +1,8 @@
 # preloadimg
 
+[![npm package](https://img.shields.io/npm/v/preloadimg.svg?style=flat-square)](https://www.npmjs.org/package/preloadimg)
+[![NPM downloads](http://img.shields.io/npm/dm/preloadimg.svg?style=flat-square)](https://npmjs.org/package/preloadimg)
+
 A library for preload images
 
 ---
