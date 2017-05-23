@@ -17,7 +17,7 @@ function preloadimg(srcAry, success, fail) {
   var precent = 0;
   var loadedimg = 0;
   var images = new Array;
-  var length = imgs.length;
+  var length = srcAry.length;
 
 
   /**
