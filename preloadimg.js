@@ -4,6 +4,7 @@
 *  @param  {Array}     srcAry  The array of image src.
 *  @param  {function}  success success callback.
 *  @param  {funciton}  fail    fail callback.
+*  @param  {funciton}  done    done callback. it will be called when all images preoloaded whatever success or failed
 */
 
 
@@ -13,7 +14,7 @@
 	(global.preloadimg = factory());
 }(this, (function () { 'use strict';
 
-function preloadimg(srcAry, success, fail) {
+function preloadimg(srcAry, success, fail, done) {
   var precent = 0;
   var loadedimg = 0;
   var images = new Array;
@@ -43,6 +44,10 @@ function preloadimg(srcAry, success, fail) {
       if (typeof success === 'function') {
         success(argus);
       }
+
+      if (typeof done === 'function' && precent === 1) {
+        done();
+      }
     };
 
     // loaded fail
@@ -60,6 +65,10 @@ function preloadimg(srcAry, success, fail) {
 
       if (typeof fail === 'function') {
         fail(argus);
+      }
+
+      if (typeof done === 'function' && precent === 1) {
+        done();
       }
 
       /**

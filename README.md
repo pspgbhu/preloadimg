@@ -21,10 +21,14 @@ Use in script tag
     'img/image3.png',
   ];
 
-  preloadimg(imgs, success => {
+  preloadimg(imgs, success => {  // everyone image preloaded success
     console.log(success);
-  }, fail => {
+
+  }, fail => {    // everyone image preloaded fail
     console.log(fail)
+
+  }, () => {    // it will called when all images preloaded whatever succeeded or failed
+    console.log('all images preload completely!')
   });
 </script>
 ```
@@ -40,9 +44,11 @@ preloadimg([
   'img/image1.png',
   'img/image2.png',
   'img/image3.png',
-], success => {
+], success => {   // everyone image preloaded success
   console.log(success);
-}, fail => {
+}, fail => {    // everyone image preloaded fail
   console.log(fail)
+}, () => {    // it will called when all images preloaded whatever succeeded or failed
+  console.log('all images preload completely!')
 });
 ```
