@@ -35,8 +35,6 @@ function preloadimg(srcAry, success, fail, done) {
       precent = Math.round(loadedimg / length * 100) / 100;
 
       argus = {
-        img: e.path[0],
-        timeStamp: e.timeStamp,
         process: precent,
         result: 'success',
       };
@@ -57,8 +55,6 @@ function preloadimg(srcAry, success, fail, done) {
       precent = Math.round(loadedimg / length * 100) / 100;
 
       argus = {
-        img: e.path[0],
-        timeStamp: e.timeStamp,
         process: precent,
         result: 'failed'
       };
