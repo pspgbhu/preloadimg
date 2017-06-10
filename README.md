@@ -48,7 +48,7 @@ preloadimg([
   console.log(success);
 }, fail => {    // everyone image preloaded fail
   console.log(fail)
-}, () => {    // it will called when all images preloaded whatever succeeded or failed
+}, () => {    // it will be called when all images preloaded whatever succeeded or failed
   console.log('all images preload completely!')
 });
 ```
